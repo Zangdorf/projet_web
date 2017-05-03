@@ -18,6 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^stock/', include("stock.urls")), #include() ALWAYS to add a new URL. 
+    url(r'^stock/', include("stock.urls")), #include() ALWAYS to add a new URL.
+    url(r'^$', include("home.urls")),
+
 
 ]

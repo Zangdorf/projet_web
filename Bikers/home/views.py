@@ -16,4 +16,4 @@ class IndexView( generic.ListView ):
         ).order_by('-pub_date')[:5]
 """
 def index(request):
-    return HttpResponse(" You are at the stock index!")
+    return HttpResponse(" You are at the home index!")
